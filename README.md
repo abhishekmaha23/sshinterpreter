@@ -1,5 +1,5 @@
-# sshinterpreter
-SSH interpreter for Pycharm to remote execute from Docker containers
+# SSH interpreter layer for Docker images
+TLDR - Adds an SSH Daemon layer to lib-based Docker images that allows them to be used as secure Pycharm SSH interpreters (remote execution)
 
 Pycharm offers an SSH interpreter option that allows a remote system to be used for execution of Python code.
 There are many Docker images freely available that package up code libraries and environments, which makes it convenient in many situations to set up virtual environments with compatible system libraries.
