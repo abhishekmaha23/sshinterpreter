@@ -1,0 +1,13 @@
+
+# This is the ssh client system-wide configuration file made for the specific temp_user pycharmuser .
+# Port number is set to 2022 to be a non-privileged port.
+# Keys need to be generated using ssh-keygen in the home folder of the user if this file is to be used independently. 
+    AllowUsers pycharmuser
+    PasswordAuthentication yes
+    Port 2022
+    HostKey /home/pycharmuser/ssh/ssh_host_rsa_key
+    PidFile /home/pycharmuser/var/run/sshd.pid
+    ChallengeResponseAuthentication no
+    AuthorizedKeysFile  .ssh/authorized_keys
+    UsePAM yes
+    Subsystem   sftp    internal-sftp
